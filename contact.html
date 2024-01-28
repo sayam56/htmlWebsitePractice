@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="wrapper">
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/classes.html">Classes</a></li>
-                <li><a href="/schedule.html">Schedule</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/schedule.html">Schedule</a></li>
+            <li><a href="/classes.html">Classes</a></li>
+            <li><a href="/">Home</a></li>                
+        </ul>
         </nav>
         <header>
             <h1 class="headerTitle"><a href="index.html">Path of Light Yoga Studio</a></h1>
@@ -22,15 +25,38 @@
 
         <main>
             <div class="classOuter">
-                
+                <div class="contactRow">
+                    <h3>Contact Path of Light Yoga Studio</h3>
+                    <p>Required fields are marked with an asterisk *</p>
+                    <form action="" method="get" class="contactForm">
+                        <div class="form-textfield">
+                          <label for="name" class="col-25"> * Name: </label>
+                          <input class="col-75" type="text" name="name" id="name" required />
+                        </div>
+                        <div class="form-textfield">
+                          <label for="email" class="col-25"> * E-mail: </label>
+                          <input class="col-75" type="email" name="email" id="email" required />
+                        </div>
+                        <div class="form-textfield">
+                            <label for="refer" class="col-25"> Referred by? </label>
+                            <input class="col-75" type="text" name="refer" id="refer" />
+                          </div>
+                          <div class="form-textfield">
+                            <label for="comments" class="col-25"> * Comments: </label>
+                            <textarea class="col-75" name="comments" id="comments" rows="2" cols="50" required> </textarea>
+                          </div>
+                        <div class="form-submit">
+                          <input class="col-75" type="submit" value="Send Now" />
+                        </div>
+                      </form>
+                </div>
+                <div class="footer">
+                  <p>Copyright &copy; 2022 Path of Light Yoga Studio</p>
+                  <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+              </div>
             </div>
         </main>
     </div>
 </body>
-
-<footer>
-    <p>Copyright &copy; 2022 Path of Light Yoga Studio</p>
-    <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
-</footer>
 
 </html>
